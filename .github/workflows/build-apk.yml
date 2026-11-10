@@ -24,7 +24,7 @@ jobs:
         run: |
           unzip -q MyAI-Android-Starter.zip -d source
           cd source/MyAI-Android-Starter
-          sed -i 's/1\.8/17/g' app/build.gradle.kts
+          sed -i 's/VERSION_1_8/VERSION_17/g' app/build.gradle.kts
        
           gradle assembleDebug
 
