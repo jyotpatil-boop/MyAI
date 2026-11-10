@@ -24,7 +24,7 @@ jobs:
         run: |
           unzip -q MyAI-Android-Starter.zip -d source
           cd source/MyAI-Android-Starter
-          grep -nE 'sourceCompatibility|targetCompatibility|jvmTarget|VERSION_1_8' app/build.gradle.kts
+         cat app/build.gradle.kts
        
           gradle assembleDebug
 
