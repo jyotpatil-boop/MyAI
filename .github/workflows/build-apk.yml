@@ -24,7 +24,8 @@ jobs:
         run: |
           unzip -q MyAI-Android-Starter.zip -d source
           cd source/MyAI-Android-Starter
-          sed -i 's/VERSION_1_8/VERSION_17/g' app/build.gradle*
+          sed -i 's/jvmTarget = "17"/jvmTarget = "1.8"/g' app/build.gradle.kts
+       
           gradle assembleDebug
 
       - uses: actions/upload-artifact@v4
